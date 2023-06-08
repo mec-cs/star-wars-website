@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Shooter</title>
+    
+  </head>
+  <style>
+    body {
+      background-color: black;
+      width: 100%;
+      overflow: hidden;
+      
+      background-size: cover;
+    }
+    #board {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 40px auto;
+      border: 2px solid white;
+      
+      overflow: hidden;
+    }
+
+    #ship {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url(./alienship.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 50%;
+      bottom: 0px;
+    }
+
+    .bullets {
+      position: absolute;
+      bottom: 40px;
+      left: 51%;
+      width: 20px;
+      height: 20px;
+      background: url(./laser.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .enemies {
+      position: absolute;
+      top: 0px;
+      width: 50px;
+      height: 50px;
+      background-image: url(./alienship2-removebg-preview.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .speed{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        bottom: 0px;
+        background-image: url(./lightning.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #points {
+      position: absolute;
+      
+      opacity: 0.7;
+      font-size: 30px;
+      color: white;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .stars{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        animation: star-slide 180s infinite linear; 
+    }
+    
+    #star1{
+        background-image: url("./stars/star1.png");
+        animation-delay: 0s;
+        background-size:25%;
+        background-position: center;
+        position: absolute;
+    }
+    #star2{
+        background-image: url("./stars/star2.png");
+        animation-delay: -2s;
+        background-size: 25%;
+        background-position: center;
+        position: absolute;
+    }
+
+    @keyframes star-slide{
+        0%
+        {
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(2);
+        }
+    }
+    
+    .endScreen{
+        color: white;
+        font-size: xx-large;
+        visibility: hidden;
+    }
+
+  </style>
+  <script src="./jquery.js"></script>
+  <script src="newgame.js" defer></script>
+  <body>
+    <div class="container">
+        <div id="board">
+            <div class="banner">
+                <div class="stars" id="star1">
+                    <div>
+                        <div class="stars" id="star2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="enemies"></div>
+            <div id="ship"></div>
+        </div>
+          <div id="points">0</div>
+          <div class="endScreen">Game Over</div>
+          <div class="endScreen">Press F5 to Restart</div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Main Page</title>
+    
+  <!--Favicon Png -->
+  <link rel="icon" type="image/x-icon" href="./images/darth-vader-icon.ico">
+  
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- Main Page Css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexStyle.css">
+
+  <!-- Header Font Link -->
+  <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+
+  <!-- Font Family Imports-->
+  <link href="https://fonts.cdnfonts.com/css/rastaglion" rel="stylesheet">
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header style="font-family: star wars;">
+      STAR WARS
+    </header>
+
+    <nav class="navbar dark-bg-body-tertiary" style="margin: auto 60px;" id="NavBar">
+      <div class="container-fluid">
+          <a class="navbar-brand btn btn-outline-warning" href="./index.html" style="margin-left:40px">Main Page</a>
+          <a class="navbar-brand btn btn-outline-warning" href="./characters.html">Characters</a>
+          <a class="navbar-brand btn btn-outline-warning" href="./locations.html">Locations</a>
+          <a class="navbar-brand btn btn-outline-warning" href="./movies.html">Movies</a>
+          <a class="navbar-brand btn btn-outline-warning" href="./games.html">Games</a>
+          <a class="navbar-brand btn btn-outline-warning" href="./vehicles.html">Vehicles</a>
+          <a class="navbar-brand btn btn-outline-warning" href="./music.html">Music</a>
+          <a class="navbar-brand btn btn-outline-warning" href="./contact.html">Contact</a>
+          <a class="navbar-brand btn btn-outline-warning" href="./minigame.html" style="margin-right: 40px;">Mini-game</a>
+      </div>
+  </nav>
+
+  <div class="dropdown" id="hiddenNavbar">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+          style="color:#f5e235; background-color: black; font-family:'Rastaglion', sans-serif; display: block; margin: auto; width: auto;">
+          Contents Of Website
+      </button>
+      <ul class="dropdown-menu" style="width:auto">
+          <li><a class="dropdown-item" style="text-align: center;" href="./index.html">Main Page</a></li>
+          <li><a class="dropdown-item" style="text-align: center;" href="./characters.html">Characters</a></li>
+          <li><a class="dropdown-item" style="text-align: center;" href="./locations.html">Locations</a></li>
+          <li><a class="dropdown-item" style="text-align: center;" href="./movies.html">Movies</a></li>
+          <li><a class="dropdown-item" style="text-align: center;" href="./games.html">Games</a></li>
+          <li><a class="dropdown-item" style="text-align: center;" href="./vehicles.html">Vehicles</a></li>
+          <li><a class="dropdown-item" style="text-align: center;" href="./music.html">Music</a></li>
+          <li><a class="dropdown-item" style="text-align: center;" href="./contact.html">Contact</a></li>
+          <li><a class="dropdown-item" style="text-align: center;" href="./minigame.html">Mini-game</a></li>
+      </ul>
+  </div>
+    <hr>
+
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="../images/star-wars-characters.jpg" class="d-block w-100" alt="starwars characters">
+              <div class="overlay">
+                  <h3>Characters</h3>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../images/star-wars-locations.png" class="d-block w-100" alt="starwars locations">
+              <div class="overlay">
+                  <h3>Locations</h3>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../images/star-wars-movies.jpg" class="d-block w-100" alt="starwars movies">
+              <div class="overlay">
+                  <h3>Movies</h3>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../images/star-wars-games.jpeg" class="d-block w-100" alt="starwars games">
+              <div class="overlay">
+                  <h3>Games</h3>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../images/star-wars-vehicles.jpeg" class="d-block w-100" alt="starwars vehicles">
+              <div class="overlay">
+                  <h3>Vehicles</h3>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../images/star-wars-music.png" class="d-block w-100" alt="starwars music">
+              <div class="overlay">
+                  <h3>Music</h3>
+              </div>
+          </div>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
+    <div class="banner">             
+        <div class="stars" id="star1"><div>                          
+        <div class="stars" id="star2"></div>                       
+    </div>
+    
+    <!-- Bootstrap Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

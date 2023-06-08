@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+
+    <!--Favicon Png -->
+    <link rel="icon" type="image/x-icon" href="./images/darth-vader-icon.ico">
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!--Page Css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/gamesStyle.css">
+
+  <!-- Header Font Link -->
+  <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+
+  <!-- Font Family Imports-->
+  <link href="https://fonts.cdnfonts.com/css/rastaglion" rel="stylesheet">
+
+  <!-- Javascript Files to be imported -->
+  <script src="scripts/games.js"></script>
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+  <header style="font-family: star wars;">
+    STAR WARS
+  </header>
+
+  <nav class="navbar dark-bg-body-tertiary" style="margin: auto 60px;" id="NavBar">
+    <div class="container-fluid">
+      <a class="navbar-brand btn btn-outline-warning" href="./index.html" style="margin-left:40px">Main Page</a>
+      <a class="navbar-brand btn btn-outline-warning" href="./characters.html">Characters</a>
+      <a class="navbar-brand btn btn-outline-warning" href="./locations.html">Locations</a>
+      <a class="navbar-brand btn btn-outline-warning" href="./movies.html">Movies</a>
+      <a class="navbar-brand btn btn-outline-warning" href="./games.html">Games</a>
+      <a class="navbar-brand btn btn-outline-warning" href="./vehicles.html">Vehicles</a>
+      <a class="navbar-brand btn btn-outline-warning" href="./music.html">Music</a>
+      <a class="navbar-brand btn btn-outline-warning" href="./contact.html">Contact</a>
+      <a class="navbar-brand btn btn-outline-warning" href="./minigame.html" style="margin-right: 40px;">Mini-game</a>
+    </div>
+</nav>
+
+<div class="dropdown" id="hiddenNavbar">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+        style="color:#f5e235; background-color: black; font-family:'Rastaglion', sans-serif; display: block; margin: auto; width: auto;">
+        Contents Of Website
+    </button>
+    <ul class="dropdown-menu" style="width:auto">
+        <li><a class="dropdown-item" style="text-align: center;" href="./index.html">Main Page</a></li>
+        <li><a class="dropdown-item" style="text-align: center;" href="./characters.html">Characters</a></li>
+        <li><a class="dropdown-item" style="text-align: center;" href="./locations.html">Locations</a></li>
+        <li><a class="dropdown-item" style="text-align: center;" href="./movies.html">Movies</a></li>
+        <li><a class="dropdown-item" style="text-align: center;" href="./games.html">Games</a></li>
+        <li><a class="dropdown-item" style="text-align: center;" href="./vehicles.html">Vehicles</a></li>
+        <li><a class="dropdown-item" style="text-align: center;" href="./music.html">Music</a></li>
+        <li><a class="dropdown-item" style="text-align: center;" href="./contact.html">Contact</a></li>
+        <li><a class="dropdown-item" style="text-align: center;" href="./minigame.html">Mini-game</a></li>
+    </ul>
+</div>
+  <hr>
+
+  <div class="gallery">
+    <div class="galleryItem">
+      <img src="../images/sw-jedi-survivor.png">
+      <div class="overlay">
+        <h3>Star Wars Jedi Survivor</h3>
+      </div>
+    </div>
+    <div class="galleryItem">
+      <img src="../images/sw-battlefront2.jpg">
+      <div class="overlay">
+        <h3>Star Wars Battlefront 2</h3>
+      </div>
+    </div>
+    <div class="galleryItem">
+      <img src="../images/sw-squadrons.jpg">
+      <div class="overlay">
+        <h3>Star Wars Squadrons</h3>
+      </div>
+    </div>
+    <div class="galleryItem">
+      <img src="../images/sw-jedi-fallen-order.jpg">
+      <div class="overlay">
+        <h3>Star Wars Jedi Fallen Order</h3>
+      </div>
+    </div>
+    <div class="galleryItem">
+      <img src="../images/sw-hunters.png">
+      <div class="overlay">
+        <h3>Star Wars Hunters (Mobile)</h3>
+      </div>
+    </div>
+    <div class="galleryItem">
+      <img src="../images/sw-skywalker-saga.png">
+      <div class="overlay">
+        <h3>Star Wars Skywalker Saga Lego Edition</h3>
+      </div>
+    </div>
+    <div class="galleryItem">
+      <img src="../images/sw-angry-birds.png">
+      <div class="overlay">
+        <h3>Star Wars Angry Birds Edition</h3>
+      </div>
+    </div>
+    <div class="galleryItem">
+      <img src="../images/sw-galaxy-of-heroes.jpeg">
+      <div class="overlay">
+        <h3>Star Wars Galaxy of Heroes Edition</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="galleryItemInfo" class="galleryItem-info">
+    <button class="close-btn btn btn-outline-warning">Close</button>
+    <h2 id="galleryItemTitle"></h2>
+    <p id="galleryItemDescription"></p>
+  </div>
+
+  <div class="banner">
+    <div class="stars" id="star1">
+      <div>
+        <div class="stars" id="star2"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
